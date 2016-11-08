@@ -83,3 +83,5 @@ D:\devclass\github\RentalManagement\RentalManagement\RentalManagement\obj\Debug\
 D:\devclass\github\RentalManagement\RentalManagement\RentalManagement\obj\Debug\RentalManagement.Migrations.initialmigration.resources
 D:\devclass\github\RentalManagement\RentalManagement\RentalManagement\obj\Debug\RentalManagement.csproj.GenerateResource.Cache
 D:\devclass\github\RentalManagement\RentalManagement\RentalManagement\obj\Debug\RentalManagement.Migrations.addedrequeststringtomaintainencerequest.resources
+D:\devclass\github\RentalManagement\RentalManagement\RentalManagement\obj\Debug\RentalManagement.Migrations.Addedapplicationusertotenantandmanagertables.resources
+D:\devclass\github\RentalManagement\RentalManagement\RentalManagement\obj\Debug\RentalManagement.Migrations.fixmystuff.resources

@@ -6,7 +6,13 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using Microsoft.AspNet.Identity.Owin;
 using RentalManagement.Models;
+using Microsoft.AspNet.Identity;
+using Microsoft.Owin.Security;
+using System.Threading.Tasks;
+using System.Data.Entity.Validation;
+using System.Diagnostics;
 
 namespace RentalManagement.Controllers
 {
@@ -48,12 +54,22 @@ namespace RentalManagement.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,FirstName,LastName,Balance,ApartmentId")] Tenant tenant)
+        public async Task<ActionResult> Create([Bind(Include = "Id,FirstName,LastName,Balance,ApartmentId")] Tenant tenant)
         {
             if (ModelState.IsValid)
             {
+                string userName = tenant.FirstName + tenant.LastName;
+                ApplicationUserManager UserManager = HttpContext.GetOwinContext().GetUserManager<ApplicationUserManager>();
+                var user = new ApplicationUser { UserName = userName };
+                var result = await UserManager.CreateAsync(user, "Tenant2016");
+                await UserManager.AddToRoleAsync(user.Id, "Tenant");
+                ApplicationUser tenantUser = db.Users.FirstOrDefault(x => x.UserName == userName);
+                tenant.ApplicationUserId = tenantUser.Id;
+                tenant.ApplicationUser = tenantUser;
+               
                 db.Tenant.Add(tenant);
                 db.SaveChanges();
+                await UserManager.AddToRoleAsync(user.Id, "Tenant");
                 return RedirectToAction("Index");
             }
 

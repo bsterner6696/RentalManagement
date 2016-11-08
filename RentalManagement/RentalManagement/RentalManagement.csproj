@@ -214,6 +214,14 @@
     <Compile Include="Migrations\201611081417068_added request string to maintainence request.Designer.cs">
       <DependentUpon>201611081417068_added request string to maintainence request.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201611081628164_Added application user to tenant and manager tables.cs" />
+    <Compile Include="Migrations\201611081628164_Added application user to tenant and manager tables.Designer.cs">
+      <DependentUpon>201611081628164_Added application user to tenant and manager tables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611081654214_fix my stuff.cs" />
+    <Compile Include="Migrations\201611081654214_fix my stuff.Designer.cs">
+      <DependentUpon>201611081654214_fix my stuff.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Apartment.cs" />
@@ -327,6 +335,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201611081417068_added request string to maintainence request.resx">
       <DependentUpon>201611081417068_added request string to maintainence request.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611081628164_Added application user to tenant and manager tables.resx">
+      <DependentUpon>201611081628164_Added application user to tenant and manager tables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611081654214_fix my stuff.resx">
+      <DependentUpon>201611081654214_fix my stuff.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

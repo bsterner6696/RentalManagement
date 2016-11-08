@@ -18,5 +18,9 @@ namespace RentalManagement.Models
         public int ApartmentId { get; set; }
         public Apartment Apartment { get; set; }
 
+        [ForeignKey("ApplicationUser")]
+        public string ApplicationUserId { get; set; }
+        public ApplicationUser ApplicationUser { get; set; }
+
     }
 }
