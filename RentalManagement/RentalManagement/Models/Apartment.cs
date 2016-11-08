@@ -18,6 +18,7 @@ namespace RentalManagement.Models
         [Display(Name = "Number of Bathrooms")]
         public double NumberBathrooms { get; set; }
         public string Features { get; set; }
+
         [ForeignKey("RentalProperty")]
         public int RentalPropertyId { get; set; }
         public RentalProperty RentalProperty { get; set; }
