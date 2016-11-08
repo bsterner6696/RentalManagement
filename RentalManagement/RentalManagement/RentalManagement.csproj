@@ -206,21 +206,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201611081411258_initial migration.cs" />
-    <Compile Include="Migrations\201611081411258_initial migration.Designer.cs">
-      <DependentUpon>201611081411258_initial migration.cs</DependentUpon>
+    <Compile Include="Migrations\201611082048476_init.cs" />
+    <Compile Include="Migrations\201611082048476_init.Designer.cs">
+      <DependentUpon>201611082048476_init.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201611081417068_added request string to maintainence request.cs" />
-    <Compile Include="Migrations\201611081417068_added request string to maintainence request.Designer.cs">
-      <DependentUpon>201611081417068_added request string to maintainence request.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201611081628164_Added application user to tenant and manager tables.cs" />
-    <Compile Include="Migrations\201611081628164_Added application user to tenant and manager tables.Designer.cs">
-      <DependentUpon>201611081628164_Added application user to tenant and manager tables.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201611081654214_fix my stuff.cs" />
-    <Compile Include="Migrations\201611081654214_fix my stuff.Designer.cs">
-      <DependentUpon>201611081654214_fix my stuff.cs</DependentUpon>
+    <Compile Include="Migrations\201611082102469_set email addresses as strings.cs" />
+    <Compile Include="Migrations\201611082102469_set email addresses as strings.Designer.cs">
+      <DependentUpon>201611082102469_set email addresses as strings.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -330,17 +322,11 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201611081411258_initial migration.resx">
-      <DependentUpon>201611081411258_initial migration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201611082048476_init.resx">
+      <DependentUpon>201611082048476_init.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201611081417068_added request string to maintainence request.resx">
-      <DependentUpon>201611081417068_added request string to maintainence request.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201611081628164_Added application user to tenant and manager tables.resx">
-      <DependentUpon>201611081628164_Added application user to tenant and manager tables.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201611081654214_fix my stuff.resx">
-      <DependentUpon>201611081654214_fix my stuff.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201611082102469_set email addresses as strings.resx">
+      <DependentUpon>201611082102469_set email addresses as strings.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

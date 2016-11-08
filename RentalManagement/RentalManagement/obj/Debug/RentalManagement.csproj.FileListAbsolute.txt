@@ -80,8 +80,6 @@ D:\devclass\github\RentalManagement\RentalManagement\RentalManagement\bin\Micros
 D:\devclass\github\RentalManagement\RentalManagement\RentalManagement\obj\Debug\RentalManagement.csprojResolveAssemblyReference.cache
 D:\devclass\github\RentalManagement\RentalManagement\RentalManagement\obj\Debug\RentalManagement.dll
 D:\devclass\github\RentalManagement\RentalManagement\RentalManagement\obj\Debug\RentalManagement.pdb
-D:\devclass\github\RentalManagement\RentalManagement\RentalManagement\obj\Debug\RentalManagement.Migrations.initialmigration.resources
+D:\devclass\github\RentalManagement\RentalManagement\RentalManagement\obj\Debug\RentalManagement.Migrations.init.resources
 D:\devclass\github\RentalManagement\RentalManagement\RentalManagement\obj\Debug\RentalManagement.csproj.GenerateResource.Cache
-D:\devclass\github\RentalManagement\RentalManagement\RentalManagement\obj\Debug\RentalManagement.Migrations.addedrequeststringtomaintainencerequest.resources
-D:\devclass\github\RentalManagement\RentalManagement\RentalManagement\obj\Debug\RentalManagement.Migrations.Addedapplicationusertotenantandmanagertables.resources
-D:\devclass\github\RentalManagement\RentalManagement\RentalManagement\obj\Debug\RentalManagement.Migrations.fixmystuff.resources
+D:\devclass\github\RentalManagement\RentalManagement\RentalManagement\obj\Debug\RentalManagement.Migrations.setemailaddressesasstrings.resources
