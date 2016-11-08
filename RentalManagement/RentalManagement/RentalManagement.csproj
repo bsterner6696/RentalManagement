@@ -196,14 +196,29 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ApartmentsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MaintainenceRequestsController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PropertyManagersController.cs" />
+    <Compile Include="Controllers\RentalPropertiesController.cs" />
+    <Compile Include="Controllers\TenantsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201611081411258_initial migration.cs" />
+    <Compile Include="Migrations\201611081411258_initial migration.Designer.cs">
+      <DependentUpon>201611081411258_initial migration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611081417068_added request string to maintainence request.cs" />
+    <Compile Include="Migrations\201611081417068_added request string to maintainence request.Designer.cs">
+      <DependentUpon>201611081417068_added request string to maintainence request.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Apartment.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\MaintainenceRequest.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\PropertyManager.cs" />
     <Compile Include="Models\RentalProperty.cs" />
@@ -269,6 +284,31 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Apartments\Create.cshtml" />
+    <Content Include="Views\Apartments\Delete.cshtml" />
+    <Content Include="Views\Apartments\Details.cshtml" />
+    <Content Include="Views\Apartments\Edit.cshtml" />
+    <Content Include="Views\Apartments\Index.cshtml" />
+    <Content Include="Views\MaintainenceRequests\Create.cshtml" />
+    <Content Include="Views\MaintainenceRequests\Delete.cshtml" />
+    <Content Include="Views\MaintainenceRequests\Details.cshtml" />
+    <Content Include="Views\MaintainenceRequests\Edit.cshtml" />
+    <Content Include="Views\MaintainenceRequests\Index.cshtml" />
+    <Content Include="Views\PropertyManagers\Create.cshtml" />
+    <Content Include="Views\PropertyManagers\Delete.cshtml" />
+    <Content Include="Views\PropertyManagers\Details.cshtml" />
+    <Content Include="Views\PropertyManagers\Edit.cshtml" />
+    <Content Include="Views\PropertyManagers\Index.cshtml" />
+    <Content Include="Views\RentalProperties\Create.cshtml" />
+    <Content Include="Views\RentalProperties\Delete.cshtml" />
+    <Content Include="Views\RentalProperties\Details.cshtml" />
+    <Content Include="Views\RentalProperties\Edit.cshtml" />
+    <Content Include="Views\RentalProperties\Index.cshtml" />
+    <Content Include="Views\Tenants\Create.cshtml" />
+    <Content Include="Views\Tenants\Delete.cshtml" />
+    <Content Include="Views\Tenants\Details.cshtml" />
+    <Content Include="Views\Tenants\Edit.cshtml" />
+    <Content Include="Views\Tenants\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -280,6 +320,14 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201611081411258_initial migration.resx">
+      <DependentUpon>201611081411258_initial migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611081417068_added request string to maintainence request.resx">
+      <DependentUpon>201611081417068_added request string to maintainence request.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

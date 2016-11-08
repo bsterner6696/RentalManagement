@@ -14,9 +14,9 @@ namespace RentalManagement.Models
         public double RentPerMonth { get; set; }
         public int Unit { get; set; }
         [Display(Name = "Number of Bedrooms")]
-        public int NumberBedrooms { get; set; }
+        public double NumberBedrooms { get; set; }
         [Display(Name = "Number of Bathrooms")]
-        public int NumberBathrooms { get; set; }
+        public double NumberBathrooms { get; set; }
         public string Features { get; set; }
         [ForeignKey("RentalProperty")]
         public int RentalPropertyId { get; set; }

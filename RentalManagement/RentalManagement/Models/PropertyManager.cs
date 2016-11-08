@@ -10,5 +10,9 @@ namespace RentalManagement.Models
     {
         [Key]
         public int Id { get; set; }
+        public string EmailAddress { get; set; }
+        public int PhoneNumber { get; set; }
+        [Display(Name = "Property Manager Name")]
+        public string Name { get; set; }
     }
 }
