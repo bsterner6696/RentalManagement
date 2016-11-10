@@ -83,7 +83,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Controllers\HomeControllerTest.cs" />
+    <Compile Include="Controllers\ProjectTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />

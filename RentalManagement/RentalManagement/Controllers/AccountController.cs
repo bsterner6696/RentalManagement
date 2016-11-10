@@ -58,7 +58,7 @@ namespace RentalManagement.Controllers
         public ActionResult Login(string returnUrl)
         {
             ViewBag.ReturnUrl = returnUrl;
-            return View();
+            return View("Login");
         }
 
         //
@@ -139,7 +139,7 @@ namespace RentalManagement.Controllers
         [AllowAnonymous]
         public ActionResult Register()
         {
-            return View();
+            return View("Register");
         }
 
         //
@@ -191,7 +191,7 @@ namespace RentalManagement.Controllers
         [AllowAnonymous]
         public ActionResult ForgotPassword()
         {
-            return View();
+            return View("ForgotPassword");
         }
 
         //
@@ -227,7 +227,7 @@ namespace RentalManagement.Controllers
         [AllowAnonymous]
         public ActionResult ForgotPasswordConfirmation()
         {
-            return View();
+            return View("ForgotPasswordConfirmation");
         }
 
         //
@@ -235,7 +235,7 @@ namespace RentalManagement.Controllers
         [AllowAnonymous]
         public ActionResult ResetPassword(string code)
         {
-            return code == null ? View("Error") : View();
+            return code == null ? View("Error") : View("ResetPassword");
         }
 
         //
@@ -269,7 +269,7 @@ namespace RentalManagement.Controllers
         [AllowAnonymous]
         public ActionResult ResetPasswordConfirmation()
         {
-            return View();
+            return View("ResetPasswordConfirmation");
         }
 
         //
@@ -401,7 +401,7 @@ namespace RentalManagement.Controllers
         [AllowAnonymous]
         public ActionResult ExternalLoginFailure()
         {
-            return View();
+            return View("ExternalLoginFailure");
         }
 
         protected override void Dispose(bool disposing)
